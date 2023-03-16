@@ -1,0 +1,79 @@
+new file cek kelulusan : 
+package bangundatar;
+import java.util.Scanner;
+public class cekkelulusan {
+    public static void main(String[] args) {
+        Scanner score = new Scanner (System.in);
+        int nilai;
+        String nama;
+        System.out.println("Masukkan nama siswa : ");
+        nama = score.nextLine();
+        System.out.print("Masukkan nilai Siswa : ");
+        nilai  = score.nextInt();
+        
+        if (nilai >=70) {
+        System.out.println("Selamat " +nama+ ",anda lulus!");
+        
+        }else {
+       System.out.println("Maaf " +nama+ ",anda gagal");
+        }
+    }
+    
+}
+
+
+
+
+
+new file perulangan :
+
+package bangundatar;
+
+public class perulangan {
+    public static void main(String[] args) {
+        for (int i=0; i <= 5; i++) {
+        System.out.println("****");
+        }
+    }
+}
+
+
+
+new file persegi panjang :
+package bangundatar;
+import java.util.Scanner;
+public class persegipanjang {
+
+    public static void main(String[] args) {
+        Scanner nilai = new Scanner (System.in);
+        int keliling, luas, panjang, lebar;
+        System.out.println("Masukkan Nilai Panjang : ");
+        panjang = nilai.nextInt();
+        System.out.println("Masukkan Nilai Lebar : ");
+        lebar = nilai.nextInt();
+        keliling = 2*panjang + 2*lebar;
+        luas = panjang*lebar;
+        System.out.println("Keliling Persegi Panjang Adalah" +keliling);
+        System.out.println("Keliling Persegi Panjang Adalah" +luas);
+    }
+    
+}
+
+
+new file segitiga :
+
+package bangundatar;
+import java.util.Scanner;
+
+public class segitiga {
+    public static void main(String[] args) {
+        Scanner nilai = new Scanner (System.in);
+        int luas, alas, tinggi;
+        System.out.println("Masukkan Nilai alas : ");
+        alas = nilai.nextInt();
+        System.out.println("Masukkan Nilai tinggi : ");
+        tinggi = nilai.nextInt();
+        luas = (alas*tinggi)/2;
+        System.out.println("luas segitila Adalah " +luas);
+    }
+}
